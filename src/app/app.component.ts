@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { MessagesComponent } from "./messages/messages.component";
+import { RouterModule } from '@angular/router';
+import { MessagesComponent } from './components/messages/messages.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive, MessagesComponent],
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive, RouterModule, MessagesComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
