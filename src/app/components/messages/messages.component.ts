@@ -9,12 +9,13 @@ import {
 import { MessagesPresenter } from './messages.presenter';
 
 @Component({
-  selector: 'app-messages',
+  selector: 'app-messages-ui',
   standalone: true,
   imports: [],
   templateUrl: './messages.component.html',
   styleUrl: './messages.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  providers: [MessagesPresenter],
 })
 export class MessagesComponent {
   get messages(): string[] {
