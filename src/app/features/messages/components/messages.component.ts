@@ -6,7 +6,7 @@ import {
   Output,
 } from '@angular/core';
 
-import { MessagesPresenter } from './messages.presenter';
+import { MessagesPresenter } from '../presenters/messages.presenter';
 
 @Component({
   selector: 'app-messages-ui',

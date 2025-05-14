@@ -3,7 +3,7 @@ import { Router, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { RouterModule } from '@angular/router';
-import { MessagesComponent } from './components/messages/messages.component';
+import { MessagesComponent } from './features/messages/components/messages.component';
 
 @Component({
   selector: 'app-root',

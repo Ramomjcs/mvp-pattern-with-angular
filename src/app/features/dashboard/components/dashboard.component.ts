@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Hero } from '../../interfaces/hero';
+import { Hero } from '../../heroes/models/hero';
 import { RouterModule } from '@angular/router';
 
 @Component({

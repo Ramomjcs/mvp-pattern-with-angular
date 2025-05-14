@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { map } from 'rxjs';
-import { Hero } from '../../interfaces/hero';
-import { HeroService } from '../../services/hero.service';
-import { DashboardComponent } from './dashboard.component';
+import { Hero } from '../../heroes/models/hero';
+import { HeroService } from '../../heroes/services/hero.service';
+import { DashboardComponent } from '../components/dashboard.component';
 
 @Component({
   selector: 'app-dashboard',
