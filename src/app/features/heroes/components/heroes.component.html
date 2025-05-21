@@ -1,0 +1,20 @@
+<h2>{{ title }}</h2>
+
+<div>
+  <label>
+    Hero name:
+    <input [formControl]="nameControl" />
+  </label>
+  <button (click)="addHero()">add</button>
+</div>
+
+<ul class="heroes">
+  <ng-container *ngFor="let hero of heroes; let i = index; let last = last">
+    <li>
+      <a routerLink="['/detail', hero.id]">
+        <span class="badge">{{ hero.id }}</span> {{ hero.name }}
+      </a>
+      <button class="delete" title="delete hero" (click)="remove.emit(hero)">x</button>
+    </li>
+  </ng-container>
+</ul>
