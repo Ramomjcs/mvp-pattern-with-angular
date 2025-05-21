@@ -1,7 +1,0 @@
-<div @if(hasMessages)>
-  <h2>{{ title }}</h2>
-  <button class="clear" (click)="clear.emit()">clear</button>
-  @for (message of messages; track message) {
-    <div>{{ message }}</div>
-  }
-</div>
